@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1076px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.bg {
+  background: #f7f9fe;
+  margin-top: 30px;
+}
+#stopwatch {
+  /* border: 6px dashed rgb(36, 114, 5); */
+  background: #ffffffd2;
+  border-radius: 50%;
+  height: 230px;
+  width: 230px;
+  position: relative;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+#inner-circle {
+  position: absolute;
+  background: #ffffffd5;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0px 0px -100px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+#inner-circle1 {
+  position: absolute;
+  background: #ffffffe7;
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+
+  top: 50%;
+  left: 50%;
+  margin: -70px 0px 0px -70px;
+}
+#inner-circle2 {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 50%;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0px 0px -50px;
+}
+h3 {
+  line-height: 60px;
+  font-size: 15px;
+}
+.lap {
+  width: 40%;
+  margin: auto;
+
+  display: table;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .lap {
+    width: 90%;
+  }
+}
+@media (min-width: 600px) and (max-width: 1168px) {
+  .lap {
+    width: 50%;
+  }
+}
+.lap-data {
+  background-color: white;
+  width: 30%;
+  height: 70px;
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 5px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.lap-data:hover{
+  background-color:#072344;
+  color:#f7f9fe;
+  width: 31%;
+}
+.icon {
+  color: grey;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+.lap-data .icon:hover{
+  color: red;
+}
+h4 {
+  margin: 0px;
+  padding: 0px;
+}
+h5 {
+  margin-top: 10px;
+  color: grey;
+}
+.buttons {
+  margin-top: 30px;
+  text-align: center;
+}
+button {
+  background-color: lightgray;
+  color: #072344;
+
+  border: none;
+  border-radius: 24px;
+  width: 90px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  font-size: 17px;
+  font-weight: 800;
+}
+button:hover {
+  background-color: #000000;
+  color: white;
+}
+.timer {
+  font-family: 'Orbitron', sans-serif !important;
+}
+.red-dot {
+  background-color: red;
+  position: absolute;
+    z-index: 10;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: 50%;
+    right: 37px;
+    opacity: 0.5;
+
+}
+.green-dot {
+  background-color: green;
+  position: absolute;
+  z-index: 11;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: 3%;
+  left: 100px;
+
+}
+
+.blue-dot {
+  background-color: rgb(0, 115, 182);
+  position: absolute;
+  z-index: 11;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  bottom: 10%;
+  left: 50px;
+
+
+}
+.red-dot,
+.green-dot,.blue-dot{
+  border-radius: 50%;
+}
+
+
+
+.border {
+  border: 4px dashed gray;
+  
+}
+
+@keyframes dash {
+  to {
+      background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+  }
+}
